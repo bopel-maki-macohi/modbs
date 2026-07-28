@@ -5,6 +5,10 @@
     - `getClassPath`
     - `getClassFilename`
 
+- `ModuleHandler`:
+    - Has a `toString` function now
+    - `dispatch` is run on events before running `dispatch` on modules
+
 - Flixel Support:
     - `FlxModBSGame` : Use this instead of `FlxGame` (Recommended as a variable to use the `handler` variable)
         - `handler` variable : `FlxHandler`
@@ -18,10 +22,6 @@
         - `state` variable
     - `FlxSignalResizeGameEvent` : `FlxSignalEvent` for the `resizeGame` `FlxG.signals` signal
         - `width` and `height` variable
-
-- `ModuleHandler`:
-    - Has a `toString` function now
-    - `dispatch` is run on events before running `dispatch` on modules
 
 # 1.0.1 - 07/28/2026
 
