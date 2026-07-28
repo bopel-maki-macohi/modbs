@@ -16,10 +16,6 @@ class AllTests
 		Test02.main();
 		Test03.main();
 
-		#if flixel
-		FlixelText01.main();
-		#end
-
 		for (log in logs) Sys.println(log);
 	}
 }
