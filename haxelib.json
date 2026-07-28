@@ -1,7 +1,7 @@
 {
     "name": "modbs",
     "url": "https://github.com/bopel-maki-macohi/modbs",
-    "license": "MIT",
+    "license": "Apache",
     "tags": [
         "modular"
     ],
@@ -11,5 +11,6 @@
     "contributors": [
         "Maki"
     ],
-    "dependencies": {}
+    "dependencies": {},
+    "classPath": "src/"
 }
