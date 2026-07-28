@@ -1,0 +1,15 @@
+{
+    "name": "modbs",
+    "url": "https://github.com/bopel-maki-macohi/modbs",
+    "license": "MIT",
+    "tags": [
+        "modular"
+    ],
+    "description": "Modular Bullshit",
+    "version": "1.0.0",
+    "releasenote": "Initial Shit",
+    "contributors": [
+        "Maki"
+    ],
+    "dependencies": {}
+}
