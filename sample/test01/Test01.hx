@@ -6,7 +6,7 @@ class Test01
 {
 	static function main()
 	{
-		var handler = new ModuleHandler<HelloWorldModule, ModuleEvent>();
+		var handler = new ModuleHandler<HelloWorldModule>();
 		handler.add(new HelloWorldModule('01'));
 		
 		handler.dispatch(new ModuleEvent('01'));

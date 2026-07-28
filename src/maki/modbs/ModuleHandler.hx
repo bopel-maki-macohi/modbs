@@ -1,6 +1,6 @@
 package maki.modbs;
 
-class ModuleHandler<T:Module, E:ModuleEvent>
+class ModuleHandler<T:Module>
 {
 	public var modules(default, null):Array<T> = [];
 
@@ -28,7 +28,7 @@ class ModuleHandler<T:Module, E:ModuleEvent>
 		module.destroy();
 	}
 
-	public function dispatch(event:E)
+	public function dispatch<E:ModuleEvent>(event:E)
 	{
 		for (module in modules) if (!event.cancelled) module?.dispatch(event);
 	}
