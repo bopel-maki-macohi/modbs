@@ -1,4 +1,4 @@
-package maki.modbs.flixel;
+package maki.modbs.flixel.events;
 
 class FlxSignalEvent extends FlxEvent
 {

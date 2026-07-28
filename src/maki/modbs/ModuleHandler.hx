@@ -1,5 +1,7 @@
 package maki.modbs;
 
+import maki.modbs.util.ClassUtil;
+
 class ModuleHandler<T:Module>
 {
 	public var modules(default, null):Array<T> = [];
@@ -33,5 +35,10 @@ class ModuleHandler<T:Module>
 		event.dispatch(null);
 
 		for (module in modules) if (!event.cancelled) module?.dispatch(event);
+	}
+
+	public function toString()
+	{
+		return ClassUtil.getClassFilename(this);
 	}
 }

@@ -1,5 +1,6 @@
 package maki.modbs;
 
+import maki.modbs.util.ClassUtil;
 using StringTools;
 
 class Module
@@ -14,7 +15,7 @@ class Module
 	{
 		if (type == null || type.trim().length < 1)
 		{
-			if (id == null || id.trim().length < 1) return Type.getClassName(Type.getClass(this));
+			if (id == null || id.trim().length < 1) return ClassUtil.getClassFilename(this);
 
 			return id;
 		}

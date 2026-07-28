@@ -1,3 +1,4 @@
+import haxe.io.Path;
 import haxe.Log;
 
 class AllTests
@@ -7,9 +8,8 @@ class AllTests
 		var logs:Array<String> = [];
 		Log.trace = function(v, ?infos)
 		{
-			var file = infos.fileName.substr('tests/'.length);
-			file = file.substr(0, file.length - '.hx'.length);
-			logs.push('$file : $v');
+			var file = new Path(infos.fileName);
+			logs.push('${file.file} : $v');
 		};
 
 		Test01.main();

@@ -1,13 +1,13 @@
 package maki.modbs.flixel;
 
-class FlxEvent extends ModuleEvent
+class FlxModule extends Module
 {
 	override public function new()
 	{
-		super(null, false, null);
+		super(null, null);
 
 		#if !flixel
-		throw 'FlixelEvent should only be used when HaxeFlixel is installed';
+		throw 'FlxModule should only be used when HaxeFlixel is installed';
 		#end
 	}
 
@@ -16,7 +16,7 @@ class FlxEvent extends ModuleEvent
 		super.dispatch(event);
 
 		#if flixel
-		flixel.FlxG.log.add('${internal_id} dispatched');
+		flixel.FlxG.log.add('${event} received');
 		#end
 	}
 }
