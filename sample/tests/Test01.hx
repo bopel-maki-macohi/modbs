@@ -1,6 +1,4 @@
-import maki.modbs.ModuleHandler;
-import maki.modbs.ModuleEvent;
-import maki.modbs.Module;
+package tests;
 
 class Test01
 {

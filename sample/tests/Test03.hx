@@ -1,4 +1,4 @@
-import maki.modbs.*;
+package tests;
 
 class Test03
 {

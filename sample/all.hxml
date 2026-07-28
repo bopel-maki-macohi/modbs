@@ -1,0 +1,7 @@
+-L modbs
+
+-m AllTests
+
+--interp
+
+-D no-deprecation-warnings
