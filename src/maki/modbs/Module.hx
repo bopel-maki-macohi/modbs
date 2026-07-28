@@ -10,18 +10,18 @@ class Module
 
 	function get_internal_id():String
 	{
-		return '${type}_${id}';
+		return '${type.toLowerCase()}_${id}';
 	}
 
-	public function new(id:String, ?type:String)
+	public function new(id:String, type:String)
 	{
 		this.id = id;
-		this.type = type ?? 'module';
+		this.type = type?.toLowerCase() ?? 'module';
 	}
 
 	public function toString():String
 	{
-		return 'Module(internal_id: $internal_id)';
+		return '$internal_id';
 	}
 
 	public function dispatch(event:ModuleEvent) {}

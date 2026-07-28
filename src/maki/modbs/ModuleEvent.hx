@@ -20,6 +20,7 @@ class ModuleEvent extends Module
 
 	override public function toString():String
 	{
-		return 'ModuleEvent(internal_id: $internal_id, cancelable: $cancelable, cancelled: $cancelled)';
+		if (!cancelable) return '$internal_id';
+		else return '$internal_id(cancelled: $cancelled)';
 	}
 }

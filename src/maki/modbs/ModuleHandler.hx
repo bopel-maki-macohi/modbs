@@ -15,7 +15,7 @@ class ModuleHandler<T:Module, E:ModuleEvent>
 	{
 		if (module == null) throw 'Attempted to add null module';
 
-		if (modules.indexOf(module) < 0) return;
+		if (modules.indexOf(module) > -1) return;
 
 		modules.push(module);
 	}
