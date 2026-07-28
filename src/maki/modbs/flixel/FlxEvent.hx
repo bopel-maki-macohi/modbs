@@ -1,6 +1,6 @@
 package maki.modbs.flixel;
 
-class FlixelEvent extends ModuleEvent
+class FlxEvent extends ModuleEvent
 {
 	override public function new()
 	{
@@ -16,7 +16,7 @@ class FlixelEvent extends ModuleEvent
 		super.dispatch(event);
 
 		#if flixel
-		flixel.FlxG.log.info('${internal_id} dispatched');
+		flixel.FlxG.log.add('${internal_id} dispatched');
 		#end
 	}
 }
