@@ -30,6 +30,8 @@ class ModuleHandler<T:Module>
 
 	public function dispatch<E:ModuleEvent>(event:E)
 	{
+		event.dispatch(null);
+
 		for (module in modules) if (!event.cancelled) module?.dispatch(event);
 	}
 }
