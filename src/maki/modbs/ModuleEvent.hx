@@ -13,7 +13,7 @@ class ModuleEvent extends Module
 
 	override public function new(id:String, ?cancelable:Bool = true, ?type:String)
 	{
-		super(id, type ?? 'moduleevent');
+		super(id, type);
 
 		this.cancelable = cancelable;
 	}
