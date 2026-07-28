@@ -7,8 +7,8 @@ class AllTests
 		var logs:Array<String> = [];
 		Log.trace = function(v, ?infos)
 		{
-            var file = infos.fileName.substr('tests/'.length);
-            file = file.substr(0,file.length - '.hx'.length);
+			var file = infos.fileName.substr('tests/'.length);
+			file = file.substr(0, file.length - '.hx'.length);
 			logs.push('$file : $v');
 		};
 
@@ -16,9 +16,6 @@ class AllTests
 		Test02.main();
 		Test03.main();
 
-		for (log in logs)
-		{
-			Sys.println(log);
-		}
+		for (log in logs) Sys.println(log);
 	}
 }
